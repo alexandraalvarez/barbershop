@@ -1,4 +1,190 @@
 @charset "UTF-8";
+/*Para compilar el manifiesto desde la raiz de tu proyecto, abre el terminal verifica que este en la raiz de 
+tu proyecto con el comando 'ls' deberias ver assets index.html ->luego de verificar, colocaremos el comando 
+sass --watch assets/scss/main.scss:assets/css/style.css */
+/*Esquema de colores*/
+/*Tipografías*/
+.button {
+  background-color: #6C6E70;
+  border-radius: 30px;
+  color: #FFF;
+}
+.button--medium {
+  padding: 10px 35px;
+}
+.button--small {
+  padding: 9px 16px;
+}
+.button--medium, .button--small {
+  font-size: 16px;
+}
+.button--medium:hover, .button--small:hover {
+  background-color: #D1D1D1;
+}
+
+.link {
+  cursor: pointer;
+}
+.link--primary {
+  color: #D76C69;
+}
+.link--primary:hover {
+  color: #222323;
+}
+.link--primary:active {
+  color: #D1D1D1;
+}
+.link--secondary {
+  color: #D76C69;
+}
+.link--light {
+  color: #D1D1D1;
+}
+.link--dark {
+  color: #121619;
+}
+
+.paginator {
+  border-radius: 0.25rem;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.paginator__item:first-child .paginator__link {
+  border-top-left-radius: 1.25rem;
+  border-bottom-left-radius: 1.25rem;
+  margin-left: 0;
+}
+.paginator__item:last-child .paginator__link {
+  border-top-right-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
+  margin-left: -1px;
+}
+.paginator__item.--active .paginator__link {
+  background-color: #222323;
+  border-color: #222323;
+  color: #FFF;
+  z-index: 1;
+}
+.paginator__link {
+  background-color: #FFF;
+  border: 1px solid #D1D1D1;
+  color: #121619;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-left: -1px;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+}
+.paginator__link:hover {
+  color: #6C6E70;
+  text-decoration: none;
+}
+
+.thumbnail {
+  text-align: center;
+}
+.thumbnail__image {
+  border-radius: 50%;
+  height: auto;
+  width: 120px;
+}
+
+.navigation-bar {
+  background-color: #121619 !important;
+}
+.navigation-bar__brand {
+  height: auto;
+  width: 50px;
+  padding-top: 10px;
+}
+
+.header {
+  background-image: url("../images/post-image.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #FFF;
+  display: table;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 900;
+  height: 600px;
+  text-align: center;
+}
+.header__text {
+  display: table-cell;
+  padding: 0 65px;
+  vertical-align: middle;
+}
+
+.post {
+  font-size: 16px;
+  padding: 40px 40px 0;
+}
+.post__date {
+  color: #6C6E70;
+  font-family: "Playfair Display", serif;
+  margin: 0 0 40px;
+}
+.post__text {
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+}
+.post__social {
+  height: 50px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.related {
+  border: 1px solid #E6E7E7;
+  padding: 50px;
+}
+.related__info {
+  padding: 20px 0 0;
+  text-align: center;
+}
+.related__name {
+  color: #121619;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 900;
+}
+.related__name, .related__social, .related__site {
+  display: block;
+}
+.related__bio {
+  display: none;
+}
+
+.navigation-pages {
+  background-color: #D1D1D1;
+}
+.navigation-pages__wrapper {
+  margin: 50px auto;
+  width: fit-content;
+}
+
+.footer {
+  background-color: #222323;
+  display: table;
+  padding: 80px 0;
+  text-align: center;
+}
+.footer__logo-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.footer__logo {
+  height: auto;
+  width: 50px;
+}
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -9908,94 +10094,6 @@ h3 {
     color: inherit;
     border-color: #dee2e6;
   }
-}
-/* Reset*/
-body {
-  margin: 0;
-}
-
-img {
-  max-width: 100%;
-}
-
-.navigation {
-  background-color: #121619;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #D76C69 !important;
-}
-
-.logo__image {
-  width: 40%;
-}
-
-.header {
-  background-image: url("../img/post-image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header__container {
-  text-align: center;
-}
-.header__title {
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  font-size: 70px;
-  font-style: italic;
-  color: #FFF;
-  margin-top: 12.5rem;
-  margin-bottom: 12.5rem;
-}
-.header__icon {
-  color: #FFF;
-  margin-top: 7.25rem;
-  margin-bottom: 1rem;
-}
-
-article {
-  text-align: justify;
-}
-
-.post__fecha {
-  font-family: "Playfair Display", serif;
-  font-weight: 400;
-  font-size: 18px;
-}
-.post__texto {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 2;
-}
-.post .button {
-  background-color: #6C6E70;
-  color: #FFF;
-  padding: 0.625rem;
-  border-radius: 30px;
-}
-.post .button:hover {
-  background-color: #D1D1D1;
-}
-
-.section__contenedor2 {
-  background-color: #D1D1D1;
-  height: 30%;
-}
-
-.footer {
-  background-color: #121619;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer__logo {
-  width: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */

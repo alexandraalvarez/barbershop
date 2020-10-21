@@ -17,9 +17,16 @@ $nickel: #6C6E70;
 
 /*Tipografías*/
 
-//Fonts
-$playfair: 'Playfair Display', serif;
+//Roboto
 $roboto: 'Roboto', sans-serif;
+$roboto-light: 300;
+$roboto-regular: 400;
+
+//Playfair
+$playfair: 'Playfair Display', serif;
+$playfair-regular: 400;
+$playfair-bold: 900;
+$playfair-italic: italic;
 
 //Font-weight
 $font-light: 300;
@@ -32,3 +39,11 @@ $x-large: 30px;
 $large: 18px;
 $medium:16px;
 $small:12px;
+
+$primary-font: $roboto;
+$primary-font-light: $roboto-light;
+$primary-font-regular: $roboto-regular;
+$secondary-font: $playfair;
+$secondary-font-regular: $playfair-regular;
+$secondary-font-bold: $playfair-bold;
+$secondary-font-italic: $playfair-italic;

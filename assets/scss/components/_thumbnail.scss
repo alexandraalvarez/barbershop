@@ -1,0 +1,9 @@
+.thumbnail {
+    text-align: center;
+  
+    &__image {
+      border-radius: 50%;
+      height: auto;
+      width: 120px;
+  }
+}  
