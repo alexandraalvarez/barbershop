@@ -16,6 +16,8 @@ sass --watch assets/scss/main.scss:assets/css/style.css */
 @import 'components/thumbnail';
 
 //layout
+@import 'layout/footer';
+@import 'layout/nav';
 
 //pages
 @import 'pages/index';

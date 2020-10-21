@@ -14,29 +14,29 @@
 
   <div class="container-fluid">
 
-    <nav class="row navbar navbar-expand-lg navbar-dark bg-dark navigation-bar">
+    <nav class="row navbar navbar-expand-lg navigation-bar">
       <a class="navbar-brand" href="#">
         <img class="navigation-bar__brand" src="./assets/images/logo.png"/>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
+      <div class="collapse navbar-collapse navigation-bar__menu" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto menu">
+          <li class="nav-item menu__item">
+            <a class="nav-link menu__link" href="#">Nosotros</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Trabajos</a>
+          <li class="nav-item menu__item">
+            <a class="nav-link menu__link" href="#">Trabajos</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Blog</a>
+          <li class="nav-item active menu__item--active">
+            <a class="nav-link menu__link--active" href="#">Blog</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Horas</a>
+          <li class="nav-item menu__item">
+            <a class="nav-link menu__link" href="#">Horas</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+          <li class="nav-item menu__item">
+            <a class="nav-link menu__link" href="#">Contacto</a>
           </li>
         </ul>
       </div>
@@ -44,13 +44,13 @@
 
     <header class="row">
       <div class="col-sm header">
-        <h1 class="header__text">5 formas de cuidar tu corte de cabello</h1>
+        <h1 class="header__text">5 formas de cuidar <br> tu corte de cabello</h1>
       </div>
     </header>
 
     <section class="row">
     
-      <div class="col-sm post px-5 py-3">
+      <div class="col-sm post px-5 pb-3 pt-5">
         <p class="post__date">12 de abril de 2018</p>
         <p class="post__text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, delectus. Earum amet, molestias maxime, debitis illum asperiores 
@@ -71,7 +71,7 @@
             quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non-numquam [do] eius modi tempora 
             inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem.
         </p>
-        <div class="py-3 post__social">
+        <div class="d-flex justify-content-start post__social ">
           <button class="button button--small">Compartir</button>
           <button class="button button--small">Comentar en Twitter</button>
         </div>
@@ -88,10 +88,12 @@
           <span class="related__social link link--primary">@Naothai</span>
           <span class="related__site link link--primary">depelos.com</span>
         </div>
-        <div class="col-lg-8 related__bio">
-          Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem.
-        </div>
-     
+        <div class="col-lg-8 px-5 related__bio">
+          <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque 
+            laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi 
+            architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem.
+          </p>
+        </div>    
     </section>
 
     <section class="row">

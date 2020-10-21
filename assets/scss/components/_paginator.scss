@@ -1,45 +1,36 @@
 .paginator {
     border-radius: 0.25rem;
     display: flex;
-    list-style: none;
     padding-left: 0;
   
     &__item:first-child &__link {
-      border-top-left-radius: 1.25rem;
-      border-bottom-left-radius: 1.25rem;
-      margin-left: 0;
+      border-top-left-radius: 1.25rem !important;
+      border-bottom-left-radius: 1.25rem !important;
     }
   
     &__item:last-child &__link {
-      border-top-right-radius: 1.25rem;
-      border-bottom-right-radius: 1.25rem;
-      margin-left: -1px;
-    }
-  
-    &__item.--active &__link {
-      background-color: $raisin-black;
-      border-color: $raisin-black;
-      color: $white;
-      z-index: 1;
+      border-top-right-radius: 1.25rem !important;
+      border-bottom-right-radius: 1.25rem !important;
     }
   
     &__link {
-      background-color: $white;
-      border: 1px solid $light-gray;
-      color: $eerie-black;
-      display: block;
+      border: 1px solid $light-gray !important;
+      color: $eerie-black !important;
       font-family: $primary-font;
       font-size: $medium;
       font-weight: $primary-font-regular;
-      line-height: 1.25;
-      margin-left: -1px;
-      padding: 0.5rem 0.75rem;
-      position: relative;
-  
+      //margin-left: -1px;
+    }
+
+    &__item.--active &__link {
+      background-color: $nickel !important;
+      border-color: $nickel !important;
+      color: $white !important;
+      //z-index: 1;
     }
   
     &__link:hover {
-      color: $nickel;
+      color: $nickel !important;
       text-decoration: none;
     }
   }
